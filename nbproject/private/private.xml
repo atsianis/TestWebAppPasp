@@ -3,14 +3,21 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/samsung%20np350/Desktop/AfDEmp%20Bootcamp/Week%20%237%23%2024-28%20June/TestWebAppPasp/web/index.html</file>
+            <file>file:/C:/Users/samsung%20np350/Desktop/AfDEmp%20Bootcamp/Week%20%237%23%2024-28%20June/TestWebAppPasp/src/java/controllers/InsertStudent.java</file>
             <file>file:/C:/Users/samsung%20np350/Desktop/AfDEmp%20Bootcamp/Week%20%237%23%2024-28%20June/TestWebAppPasp/web/login.html</file>
-            <file>file:/C:/Users/samsung%20np350/Desktop/AfDEmp%20Bootcamp/Week%20%237%23%2024-28%20June/TestWebAppPasp/web/date.jsp</file>
             <file>file:/C:/Users/samsung%20np350/Desktop/AfDEmp%20Bootcamp/Week%20%237%23%2024-28%20June/TestWebAppPasp/src/java/controllers/StudentServlet.java</file>
-            <file>file:/C:/Users/samsung%20np350/Desktop/AfDEmp%20Bootcamp/Week%20%237%23%2024-28%20June/TestWebAppPasp/src/java/dao/Student.java</file>
-            <file>file:/C:/Users/samsung%20np350/Desktop/AfDEmp%20Bootcamp/Week%20%237%23%2024-28%20June/TestWebAppPasp/src/java/services/StudentService.java</file>
+            <file>file:/C:/Users/samsung%20np350/Desktop/AfDEmp%20Bootcamp/Week%20%237%23%2024-28%20June/TestWebAppPasp/src/java/services/InsertStudentService.java</file>
+            <file>file:/C:/Users/samsung%20np350/Desktop/AfDEmp%20Bootcamp/Week%20%237%23%2024-28%20June/TestWebAppPasp/src/java/services/UpdateStudentService.java</file>
             <file>file:/C:/Users/samsung%20np350/Desktop/AfDEmp%20Bootcamp/Week%20%237%23%2024-28%20June/TestWebAppPasp/src/java/controllers/Login.java</file>
+            <file>file:/C:/Users/samsung%20np350/Desktop/AfDEmp%20Bootcamp/Week%20%237%23%2024-28%20June/TestWebAppPasp/src/java/dao/StudentDAO.java</file>
+            <file>file:/C:/Users/samsung%20np350/Desktop/AfDEmp%20Bootcamp/Week%20%237%23%2024-28%20June/TestWebAppPasp/src/java/entities/Student.java</file>
             <file>file:/C:/Users/samsung%20np350/Desktop/AfDEmp%20Bootcamp/Week%20%237%23%2024-28%20June/TestWebAppPasp/src/java/controllers/MyServlet.java</file>
+            <file>file:/C:/Users/samsung%20np350/Desktop/AfDEmp%20Bootcamp/Week%20%237%23%2024-28%20June/TestWebAppPasp/web/index.html</file>
+            <file>file:/C:/Users/samsung%20np350/Desktop/AfDEmp%20Bootcamp/Week%20%237%23%2024-28%20June/TestWebAppPasp/src/java/services/StudentService.java</file>
+            <file>file:/C:/Users/samsung%20np350/Desktop/AfDEmp%20Bootcamp/Week%20%237%23%2024-28%20June/TestWebAppPasp/web/date.jsp</file>
+            <file>file:/C:/Users/samsung%20np350/Desktop/AfDEmp%20Bootcamp/Week%20%237%23%2024-28%20June/TestWebAppPasp/src/java/services/DeleteStudentService.java</file>
+            <file>file:/C:/Users/samsung%20np350/Desktop/AfDEmp%20Bootcamp/Week%20%237%23%2024-28%20June/TestWebAppPasp/src/java/dao/Database.java</file>
+            <file>file:/C:/Users/samsung%20np350/Desktop/AfDEmp%20Bootcamp/Week%20%237%23%2024-28%20June/TestWebAppPasp/web/newstudent.jsp</file>
         </group>
     </open-files>
 </project-private>

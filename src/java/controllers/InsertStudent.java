@@ -62,6 +62,8 @@ public class InsertStudent extends HttpServlet {
         request.setAttribute("title", "Insert new student");
         rd.forward(request, response); // auto to vima mas vgazei apo auton ton servlet kai mas prowthei se alli selida
         // diladi se autin pou exoume dilwsei sto path tou dispatcher, pou mporei na einai eite html, eite (synithestera) jsp
+        
+        // some changes (test for git)
     }
 
     /**

@@ -58,11 +58,16 @@ public class StudentServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         //processRequest(request, response);
+        String qString = request.getQueryString();
         StudentService stuServ = new StudentService();
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
             out.println(stuServ.getStudents());
-        }
+            if (qString != null){
+            out.println(qString);
+            out.println(request.getParameter("delete"));
+            }
+        }  
     }
     /**
      * Handles the HTTP <code>POST</code> method.

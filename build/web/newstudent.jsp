@@ -12,12 +12,15 @@
         <title>New Student</title>
     </head>
     <body>
+        <jsp:useBean id="student" class="entities.Student" scope="page" />
+        <jsp:setProperty name="student" property="surname" value="Tasos" />
+        Student Surname : <%= student.getSurname()%>
         <h1><%=request.getAttribute("title")%></h1>
         <form action="insertstudent" method="POST">
             Name <input name="name" type="text" /><br/>
             Surname <input name="surname" type="text" /><br/>
             Grade <input name="grade" type="number" /><br/>
-            Birthdate <input name="birthday" type="date" /><br/>
+            Birthdate <input name="birthdate" type="date" /><br/>
             <input type="submit" value="New Student" name="new" />
         </form>
     </body>

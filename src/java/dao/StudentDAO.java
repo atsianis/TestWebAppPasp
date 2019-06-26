@@ -55,4 +55,11 @@ public class StudentDAO extends Database {
         if(i >= 1) return true;
         return false;
     }
+    
+    public boolean DeleteStudent(int id){
+        String query = "Delete * from `bootcampdb`.`students` where id ="+id;
+        int i = Database(server, database, username, password, query, (byte) 0);
+        if(i >= 1) return true;
+        return false;
+    }
 }

@@ -5,6 +5,7 @@
  */
 package controllers;
 
+import entities.Student;
 import java.io.IOException;
 import java.io.PrintWriter;
 import javax.servlet.RequestDispatcher;
@@ -12,6 +13,7 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import services.StudentService;
 
 /**
  *
@@ -78,6 +80,8 @@ public class InsertStudent extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         //processRequest(request, response);
+        Student st;
+        StudentService ss = new StudentService();
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
             /* TODO output your page here. You may use following sample code. */
@@ -88,6 +92,12 @@ public class InsertStudent extends HttpServlet {
             out.println("</head>");
             out.println("<body>");
             out.println("<h1>Servlet InsertStudent at " + request.getContextPath() + "</h1>");
+            st = new Student(request.getParameter("surname"),request.getParameter("name"),Float.parseFloat(request.getParameter("grade")),request.getParameter("birthdate"));
+            if(ss.InsertStudent(st)){
+                out.print("<h2>All Inserted</h2>");
+            }else{
+                out.print("<h2>Nothing inserted</h2>");
+            }
             out.println(request.getParameter("name") + " " + request.getParameter("surname"));
             out.println("</body>");
             out.println("</html>");

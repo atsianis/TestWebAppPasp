@@ -24,4 +24,10 @@ public class StudentService {
         return str.toString();
     }
     
+    public boolean InsertStudent(Student st){
+        StudentDAO sdao = new StudentDAO();
+        if (sdao.InsertStudent(st)) return true;
+        return false;
+    }
+    
 }

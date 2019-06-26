@@ -24,6 +24,14 @@ public class Student {
         this.grade = grade;
         this.birthDate = birthDate;
     }
+    
+    public Student(String surname, String name, float grade, String birthDate) {
+        this.surname = surname;
+        this.name = name;
+        this.grade = grade;
+        this.birthDate = birthDate;
+    }
+    
     private String name;
     private float grade;
     private String birthDate;

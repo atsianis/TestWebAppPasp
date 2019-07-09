@@ -9,6 +9,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
 
 public class StudentDAO extends Database {
 
@@ -56,10 +58,31 @@ public class StudentDAO extends Database {
         return false;
     }
     
+   public boolean InsertStudentJPA(Student st){
+       EntityManagerFactory emf = javax.persistence.Persistence.createEntityManagerFactory("TestWebAppThanosPU");
+       EntityManager em = emf.createEntityManager();
+       
+       em.getTransaction().begin();
+       boolean completed = false;
+       try {
+            em.persist(st); 
+            em.getTransaction().commit();
+            completed = true;
+        } catch (Exception e) {
+            e.printStackTrace();
+            em.getTransaction().rollback();
+            completed = false;
+        } finally {
+            em.close();
+            emf.close();
+        }
+       return completed;
+   }
+    
     public boolean DeleteStudent(int id){
-        String query = "Delete * from `bootcampdb`.`students` where id ="+id;
-        int i = Database(server, database, username, password, query, (byte) 0);
-        if(i >= 1) return true;
+        String query = "Delete * from `bootcampdb`.`students` where ID="+id+";";
+        int i = Database(server, database, username, password, query, (byte) 1);
+        if(i >= 1 ) return true; 
         return false;
     }
 }

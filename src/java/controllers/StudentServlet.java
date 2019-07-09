@@ -7,6 +7,7 @@ package controllers;
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -64,8 +65,9 @@ public class StudentServlet extends HttpServlet {
         try (PrintWriter out = response.getWriter()) {
             out.println(stuServ.getStudents());
             if (qString != null){
-            out.println(qString);
-            out.println(request.getParameter("delete"));
+                out.println(qString);
+                out.println(request.getParameter("delete"));
+                
             }
         }  
     }

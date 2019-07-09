@@ -68,15 +68,17 @@ public class DeleteStudent extends HttpServlet {
             out.println("</head>");
             out.println("<body>");
             out.println("<h1>Servlet DeleteStudent at " + request.getContextPath() + "</h1>");
-            // if param delete = some_id call DeleteStudent(some_id) from StudentService
-            int delete=Integer.parseInt(request.getParameter("delete"));
-            if (delete!=0){
-                StudentService ss = new StudentService();
-                if(ss.DeleteStudent(delete)){
-                    out.println("Deleted");
-                }
-                
+            //if param delete = some_id call DeleteStudent(some_id) from StudentService
+            int delete = Integer.parseInt(request.getParameter("delete"));
+
+            StudentService ss = new StudentService();
+            if (ss.DeleteStudent(delete)) {
+                out.println("<h1>Deleted</h1>");
+            }else{
+                out.println("<h1>not deleted</h1>");
             }
+                
+            
             out.println("</body>");
             out.println("</html>");
         }

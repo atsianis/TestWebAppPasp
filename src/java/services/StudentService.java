@@ -28,7 +28,7 @@ public class StudentService {
     
     public boolean InsertStudent(Student st){
         StudentDAO sdao = new StudentDAO();
-        if (sdao.InsertStudent(st)) return true;
+        if (sdao.InsertStudentJPA(st)) return true;
         return false;
     }
     
